@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+	<link href="~/css/site.css" rel="stylesheet" />
+    @*ViewBag is a dynamic object. You can create properties with any name you chose.*@
+	@*<title>@ViewBag.Title</title>*@
+	<title>@ViewData["Title"]</title>
+</head>
+<body>
+	<h2>My first MVC Website</h2>
+	<p>Default Layout Page</p>
+	<nav>
+		<a asp-controller="Home" asp-action="Index">Home Page</a><br />
+		<a asp-controller="Home" asp-action="About">About Page</a>
+	</nav>
+
+	<main>
+		@RenderBody()
+	</main>
+
+	<footer>
+		<p>&copy;@DateTime.Today.Year Hut8.dev</p>
+	</footer>
+</body>
+</html>
