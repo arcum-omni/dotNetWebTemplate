@@ -27,5 +27,10 @@ namespace AlmostEmpty3_1StarterCode.Controllers
             //ViewData["Title"] = "About Hut8"; // Not the professional way
             return View();
         }
+
+        public IActionResult RemoteControl()
+        {
+            return View();
+        }
     }
 }
